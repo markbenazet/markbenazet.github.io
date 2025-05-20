@@ -17,7 +17,7 @@ body.theme-transition,
 body.theme-transition *,
 body.theme-transition *:before,
 body.theme-transition *:after {
-  transition: all 0.3s ease-in-out !important;
+  transition: all 0.0s ease-in-out !important;
   transition-delay: 0 !important;
 }
 
