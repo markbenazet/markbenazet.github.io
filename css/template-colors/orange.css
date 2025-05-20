@@ -9,6 +9,25 @@
 /* TABLE OF CONTENTS
 	1. Template Orange
 */
+:root {
+  transition: none;
+}
+
+body.theme-transition,
+body.theme-transition *,
+body.theme-transition *:before,
+body.theme-transition *:after {
+  transition: all 0.3s ease-in-out !important;
+  transition-delay: 0 !important;
+}
+
+header, 
+footer, 
+.container, 
+.section:before,
+body {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
 /* 1. Template Orange */
 .container .line {

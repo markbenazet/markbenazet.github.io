@@ -12,6 +12,26 @@
 
 /* 1. Template Dark */
 
+:root {
+  transition: none;
+}
+
+body.theme-transition,
+body.theme-transition *,
+body.theme-transition *:before,
+body.theme-transition *:after {
+  transition: all 0.3s ease-in-out !important;
+  transition-delay: 0 !important;
+}
+
+header, 
+footer, 
+.container, 
+.section:before,
+body {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 input:focus,
 textarea:focus,
 button:focus {
