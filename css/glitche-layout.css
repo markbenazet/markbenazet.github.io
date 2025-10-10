@@ -701,12 +701,14 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .custom-list {
-  margin-top: 10px;  /* Increase/decrease this value to adjust the distance from "Week 1" */
-  margin-bottom: 20px; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  list-style-type: disc;     /* 👈 Add this line */
+  padding-left: 20px;        /* 👈 And this (bullets need indentation) */
 }
 
 .custom-list li {
-  margin-top: 8px; /* Adjusts the spacing between list items */
+  margin-top: 8px;
 }
 
 
