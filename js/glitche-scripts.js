@@ -187,7 +187,13 @@ $(function () {
 	var $container = $('.section.works .box-items');
 	$container.imagesLoaded(function() {
 		$container.isotope({
-			itemSelector: '.box-item'
+			itemSelector: '.box-item',
+			layoutMode: 'fitRows',
+			fitRows: {
+				gutter: 0
+			},
+			percentPosition: false,
+			originLeft: true
 		});
 	});
 
