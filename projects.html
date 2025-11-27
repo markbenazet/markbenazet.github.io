@@ -7,7 +7,23 @@
 		  opacity: 0;
 		}
 	  </style>
-	
+
+	<!-- Apply theme immediately to prevent flash -->
+	<script>
+		(function() {
+			const savedTheme = localStorage.getItem('theme');
+			const bgColor = savedTheme === 'dark' ? '#26262d' : '#ffffff';
+			// Create and inject style tag to override CSS with !important
+			const style = document.createElement('style');
+			style.textContent = `
+				html, body {
+					background: ${bgColor} !important;
+				}
+			`;
+			document.head.appendChild(style);
+		})();
+	</script>
+
 	<!-- Basic -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Projects</title>
